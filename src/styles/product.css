@@ -1,0 +1,11 @@
+.producto-card div {
+    text-decoration: none !important;
+    outline: none;
+    color: black;
+}
+
+.LinkRouter {
+    text-decoration: none !important;
+    outline: none;
+    color: black;
+}

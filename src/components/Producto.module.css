@@ -1,0 +1,67 @@
+.agregar {
+    cursor: pointer;
+    color: black;
+    background-color: #e85d04;
+    font-family: "abel", sans-serif;
+    font-size: 0.8rem;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.agregar:hover {
+    transform: scale(1.1);
+}
+
+.quitar:hover {
+    transform: scale(1.1);
+}
+
+.quitar {
+    cursor: pointer;
+    color: black;
+    font-family: "abel", sans-serif;
+    font-size: 0.8rem;
+    width: 100px;
+    background-color: #e85d04;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.fondoTitulo {
+    background: #cfcfc4;
+    color: black;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.proCard {
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+    border: 7px solid #cfcfc4;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    /* Fondo con el color deseado */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Transiciones para el efecto de sombra y zoom */
+    cursor: pointer;
+    /* Cambia el cursor al puntero cuando se coloca encima */
+}
+
+.proCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,44 @@
+.filtro {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #cfcfc4;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #e85d04;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.product {
+    font-size: 3rem;
+    color: #e85d04;
+    font-weight: 700;
+}
+
+.contFil {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+@media (max-width: 710px) {
+    .filtro {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+}

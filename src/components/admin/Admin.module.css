@@ -1,0 +1,85 @@
+.contForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.create {
+  background-color: #e85d04;
+  color: white;
+  width: 200px;
+
+  font-family: monospace;
+}
+.create:hover {
+  background-color: black;
+}
+.contAdmin {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.tituloForm {
+  font-family: monospace;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 5px;
+  font-family: monospace;
+}
+.tituloAd {
+  font-family: monospace;
+}
+.admin {
+  font-family: monospace;
+}
+
+.form label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+}
+
+.form input {
+  border-radius: 6px;
+}
+
+.cont2 {
+  background-color: #e85d04;
+  text-align: center;
+  font-family: monospace;
+}
+
+.btn {
+  background-color: #e85d04;
+  font-family: monospace !important;
+  padding: 5px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px black;
+  border: solid 2px white;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translateY(5px);
+}
+
+.tabla {
+  border: solid black 2px;
+  border-collapse: collapse;
+  width: 800px;
+  font-family: monospace;
+}
+
+.tabla td {
+  border: solid 2px black;
+}
+
+.tabla th {
+  border: solid 2px black;
+}

@@ -1,0 +1,142 @@
+.fondoLogin {
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contLogin {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 2%;
+  background-color: #ffc16f;
+  border: solid black 1px;
+  opacity: 1.2;
+  border-radius: 20px;
+}
+
+.titulo {
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: space-around;
+  background-color: #ffc16f;
+  width: 40rem;
+}
+
+.form input {
+  border-radius: 5px;
+}
+
+.form label {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
+}
+
+.formBtn {
+  background-color: #ffefd4;
+  border-radius: 8px;
+  border: 1px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px 12px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  margin: 2px;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+  background-color: #ccc2a6;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.logo {
+  border: solid 2px white;
+  width: 300px;
+}
+
+@media (max-width: 580px) {
+  .logo {
+    width: 150px;
+    margin: 0;
+  }
+  .contLogin {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 2%;
+    background-color: #ffc16f;
+    border: solid white 3px;
+    opacity: 1.2;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    width: 150px;
+    margin: 0;
+  }
+  .contLogin {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 2%;
+    background-color: #ffc16f;
+    border: solid white 3px;
+    opacity: 1.2;
+    border-radius: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ffc16f;
+    width: 40rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ffc16f;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    background-color: #ffc16f;
+    width: 10rem;
+  }
+}
