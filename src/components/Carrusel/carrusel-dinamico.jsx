@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-creative";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "../styles/carrusel-dinamico.css";
+import "./carrusel-dinamico.css";
 
 // import required modules
 import {
