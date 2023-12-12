@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   setFilterPage,
   setFilterSettings,
-} from "../redux/actions/filterSettingsActions.js";
+} from "../../redux/actions/filterSettingsActions.js";
 import styles from "./productFilter.module.css";
 function ProductFilter() {
   const settings = useSelector((store) => store.filterSettings.settings);

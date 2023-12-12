@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/itemDetail.css";
+// import "../styles/itemDetail.css";
 import styles from "./combo.module.css";
 // import img from "../assets/img/foto3.png";
 // import { useParams } from "react-router-dom";

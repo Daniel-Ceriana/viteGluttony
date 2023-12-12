@@ -5,12 +5,12 @@ import { Routes, Route } from "react-router-dom";
 import Landing from "./components/landing";
 import UnderConstruction from "./components/under-construction";
 // import NavBarHeader from "./components/navBar/navBarHeader";
-import ItemDetail from "./components/ItemDetail";
+import ItemDetail from "./components/Product/item/ItemDetail";
 // import ItemsFetch from "./components/itemsFetch";
-import ProductList from "./components/productList";
+import ProductList from "./components/Product/productList";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import CombosList from "./components/comboList";
+import CombosList from "./components/Combo/comboList";
 import Nav from "./components/Nav/Nav"
 import Footer from "./components/Footer/Footer";
 import SignIn from "./components/forms/SignIn/SignIn";
@@ -22,7 +22,7 @@ import Welcome from "./components/Welcome/Welcome";
 import User from "./components/User/User";
 import { useLocation } from "react-router-dom";
 import Admin from "./components/admin/Admin";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 

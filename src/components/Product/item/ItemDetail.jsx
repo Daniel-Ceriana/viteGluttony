@@ -1,13 +1,13 @@
 import React from "react";
-import "../styles/itemDetail.css";
+import "./itemDetail.css";
 // import img from "../assets/img/foto3.png";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import CombosList from "./comboList";
+import CombosList from "../../Combo/comboList";
 import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addProduct } from "../redux/actions/cartActions";
-import { updateCart } from "../service/productService";
+import { addProduct } from "../../../redux/actions/cartActions";
+import { updateCart } from "../../../service/productService";
 const ItemDetail = () => {
   const routeParams = useParams();
   // console.log(routeParams.id);

@@ -4,8 +4,8 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteProduct } from "../redux/actions/cartActions";
-import { updateCart } from "../service/productService";
+import { deleteProduct } from "../../redux/actions/cartActions";
+import { updateCart } from "../../service/productService";
 const Cart = () => {
   const cart = useSelector((store) => store.cart);
   const user = useSelector((store) => store.user);

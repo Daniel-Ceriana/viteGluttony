@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import "../styles/product.css";
-import { addProduct, deleteProduct } from "../redux/actions/cartActions";
+import "./product.css";
+import { addProduct, deleteProduct } from "../../redux/actions/cartActions";
 import { useDispatch, useSelector } from "react-redux";
 import { Link as LinkRouter } from "react-router-dom";
-import { updateCart } from "../service/productService";
+import { updateCart } from "../../service/productService";
 import styles from "./Producto.module.css";
 
 function Producto(props) {

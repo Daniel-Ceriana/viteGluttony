@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import ProductFilter from "./productFilter";
 import ProductContainer from "./productContainer";
 import { toast } from "react-toastify";
-import { setFilterSettings } from "../redux/actions/filterSettingsActions";
+import { setFilterSettings } from "../../redux/actions/filterSettingsActions";
 import { useDispatch, useSelector } from "react-redux";
-import { setFilterTotalPages } from "../redux/actions/filterSettingsActions";
+import { setFilterTotalPages } from "../../redux/actions/filterSettingsActions";
 import styles from "./productFilter.module.css";
-import { getProducts } from "../service/productService";
+import { getProducts } from "../../service/productService";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
