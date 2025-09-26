@@ -2,7 +2,7 @@ const apiRoute = 'https://gluttony-backend.vercel.app';
 //http://localhost:4000
 export const getProducts = async(settings,page = 1) => {
     
-    let url = `apiRoute/api/products/?page=${page}`;
+    let url = `${apiRoute}/api/products/?page=${page}`;
     if (settings.radio && settings.radio !== "all") {
         url += `&category=${settings.radio}`;
       }
@@ -19,7 +19,7 @@ export const getProducts = async(settings,page = 1) => {
 }
 export const updateCart = async(cart) => {
     
-  let url = `apiRoute/api/products/cart`;
+  let url = `${apiRoute}/api/products/cart`;
 
   try{
     const request = await fetch(url, {
@@ -42,7 +42,7 @@ export const getCombos = async(productId) => {
   } else {
     query = "";
   }
-  let url = `apiRoute/api/combos/${query} `;
+  let url = `${apiRoute}/api/combos/${query} `;
 
   try{
       const request = await fetch(url)
