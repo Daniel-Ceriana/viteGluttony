@@ -136,7 +136,7 @@ export default function MiniDrawer() {
   };
 
   const getProducts = () => {
-    fetch("http://localhost:4000/api/products?limit=30")
+    fetch("https://gluttony-backend.vercel.app/api/products?limit=30")
       .then((response) => response.json())
       .then((data) => {
         setAllProducts(data.page.products);
