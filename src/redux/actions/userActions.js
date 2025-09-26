@@ -2,7 +2,7 @@ import { createAsyncThunk, createAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
 //const api_url = "http://localhost:4000/api/auth";
-const api_url = "https://gluttony-backend.vercel.app";
+const api_url = "https://gluttony-backend.vercel.app/api/auth";
 
 
 const signIn = createAsyncThunk("signIn", async (parametro) => {
