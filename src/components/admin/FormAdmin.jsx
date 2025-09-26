@@ -44,7 +44,7 @@ export default function FormAdmin({ type, productID }) {
     if (type === "create") {
       try {
         const user = await axios.post(
-          `http://localhost:4000/api/products`,
+          `https://gluttony-backend.vercel.app/api/products`,
           formData,
           { headers: { Authorization: "Bearer " + userToken } }
         );
@@ -57,7 +57,7 @@ export default function FormAdmin({ type, productID }) {
     } else {
       try {
         const user = await axios.put(
-          `http://localhost:4000/api/products/` + productID,
+          `https://gluttony-backend.vercel.app/api/products/` + productID,
           formData,
           { headers: { Authorization: "Bearer " + userToken } }
         );
@@ -84,7 +84,7 @@ export default function FormAdmin({ type, productID }) {
   const getFormData = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:4000/api/products/` + productID
+        `https://gluttony-backend.vercel.app/api/products/` + productID
       );
       const product = res.data.product;
       setFormData({
