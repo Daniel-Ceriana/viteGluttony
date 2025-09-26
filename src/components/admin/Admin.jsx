@@ -114,7 +114,7 @@ export default function MiniDrawer() {
       console.log("token inexistente");
     }
     try {
-      await axios.delete("http://localhost:4000/api/products/" + productId, {
+      await axios.delete("https://gluttony-backend.vercel.app/api/products/" + productId, {
         headers: { Authorization: "Bearer " + userToken },
       });
       console.log("product deleted");
