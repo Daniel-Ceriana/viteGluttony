@@ -18,7 +18,7 @@ const CombosList = (props) => {
   // let data;
   useEffect(() => {
     // Realiza una solicitud Fetch a la API
-    fetch("http://localhost:4000/api/combos/" + query)
+    fetch("https://gluttony-backend.vercel.app/api/combos/" + query)
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
