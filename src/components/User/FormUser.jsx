@@ -44,7 +44,7 @@ export default function FormUser() {
     console.log("USER SE DESLOGUEA");
     try {
       const res = await axios.put(
-        `http://localhost:4000/api/auth/` + formData.id,
+        `https://gluttony-backend.vercel.app/api/auth/` + formData.id,
         formData
         // { headers: { Authorization: "Bearer " + userToken } }
       );
