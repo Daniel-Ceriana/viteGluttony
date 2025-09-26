@@ -27,7 +27,7 @@ const ItemDetail = () => {
   // let data;
   useEffect(() => {
     // Realiza una solicitud Fetch a la API
-    fetch("http://localhost:4000/api/products/" + routeParams.id)
+    fetch("https://gluttony-backend.vercel.app/api/products/" + routeParams.id)
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
