@@ -1,4 +1,4 @@
-const apiRoute = https://gluttony-backend.vercel.app;
+const apiRoute = 'https://gluttony-backend.vercel.app';
 //http://localhost:4000
 export const getProducts = async(settings,page = 1) => {
     
