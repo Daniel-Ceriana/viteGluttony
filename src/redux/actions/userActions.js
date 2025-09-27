@@ -5,24 +5,24 @@ import axios from "axios";
 const api_url = "https://gluttony-backend.vercel.app/api/auth";
 
 
-const signIn = createAsyncThunk("signIn", async (parametro) => {
-  const { userData, aux } = parametro;
-  // mostrar mensaje del back
-  try {
-    const user = await axios.post(`${api_url}/signin`, { userData: userData });
-    console.log(user);
-    if (user.data.success) {
-      localStorage.setItem("token", user.data.response.token);
-      console.log(user.data.response.dataUser, aux);
-      return { user: user.data.response.dataUser, cart: aux };
+const signIn = createAsyncThunk(
+  "signIn",
+  async (parametro, { rejectWithValue }) => {
+    const { userData, aux } = parametro;
+    try {
+      const user = await axios.post(`${api_url}/signin`, { userData });
+      if (user.data.success) {
+        localStorage.setItem("token", user.data.response.token);
+        return { user: user.data.response.dataUser, cart: aux };
+      } else {
+        console.log(user.data.message);
+        return rejectWithValue(user.data.message);
+      }
+    } catch (error) {
+      return rejectWithValue(error.response.data || "Error al iniciar sesión");
     }
-  } catch (error) {
-    console.log(error);
-    return {
-      payload: [],
-    };
   }
-});
+);
 const signUp = createAsyncThunk("signUp", async (user) => {
   // mostrar mensaje del back
   const userData = {
@@ -42,11 +42,9 @@ const signUp = createAsyncThunk("signUp", async (user) => {
   }
 });
 
-const signOut = createAction("signOut", async () => {
-  // mostrar mensaje del back
-  // await axios.post(`${api_url}/signout`);
+const signOut = createAction("signOut", () => {
   localStorage.removeItem("token");
-  return [];
+  return { payload: undefined }; // o null si preferís
 });
 
 const verifyToken = createAsyncThunk("verifyToken", async (token) => {
@@ -70,3 +68,4 @@ const verifyToken = createAsyncThunk("verifyToken", async (token) => {
   }
 });
 export { signIn, signUp, signOut, verifyToken };
+
